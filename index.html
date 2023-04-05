@@ -4,20 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Viagens</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        background: greenyellow;
+    }
+    footer{
+        background: rgb(102, 102, 95);
+    }
+    .navigation{
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        width: 100%;
+        padding: 10px 0;
+        position: fixed;
+        background: blueviolet;
+    }
+    .navigation .logo{
+        color: aliceblue;
+    }
+    .navigation ul{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        color: aliceblue;
+    }
+    .navigation ul li a{
+        color: aliceblue;
+    }
+    .navigation ul li a:hover{
+        color: rgb(248, 0, 0);
+    }
+    .home{
+        width: 100%;
+        justify-content: center;
+        align-items:center;
+        padding: 4rem 0;
+    }
+    .rodape{
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        position: absolute;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .rodape ul{
+        display: flex;
+        align-items: center;
+        gap: 30rem;
+    }
+    #pontos_turisticos h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>
 <body>
-    <div class="background-overlay"></div>
+    <div class="img-overlay"></div>
     <header>
         <nav class="navigation">
             <a href="#" class="logo">Y<span1>ur</span1>i M<span2>il</span2>has</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="passagens.html">Passagens</a></li>
-                <li><a href="hospedagem.html">Hospedagem</a></li>
-                <li><a href="pontos_turisticos.html">Pontos turisticos</a></li>
+                <li><a href="#Descrição">Descrição</a></li>
+                <li><a href="#pontos_turisticos">Pontos turisticos</a></li>
                 <i class='bx bx-search'></a></i>
             </ul>
         </nav>
@@ -25,21 +84,47 @@
 </body>
 <main>
     <section class="home">
-        <div class="text">
-            <h4 class="text-h4">Seja bem vindo</h4>
-            <h1 class="text-h1">Lugares para conhecer, lugares para sonhar!</h1>
-            <p>Viajar para a Europa pode ser uma experiência incrível e diversificada. O continente oferece uma 
+        <section id="Descrição">
+            <h2>Seja bem vindo</h2>
+            <h2>Lugares para conhecer, lugares para sonhar!</h2>
+            <p> Viajar para a Europa pode ser uma experiência incrível e diversificada. O continente oferece uma 
                 rica história e cultura, paisagens deslumbrantes, deliciosa gastronomia e uma ampla gama de atividades 
                 turísticas. Entre os destinos mais populares estão cidades icônicas como Paris, Londres, Roma e Barcelona, 
                 além de países encantadores como a Itália, França, Espanha, Alemanha e Portugal.</p>
-        </div>
+          </section>
     </section>
+    
+    <section id="pontos_turisticos">
+        <h2>Pontos turisticos:</h2>
+        <ul>
+            <li>
+                <h3>Paris</h3>
+                <img src="img/torre-eiffel-em-paris-com-cores-lindas_268835-832.avif" alt="Foto de Paris">
+                <p>Paris é a capital da França, localizada na região central do país. É uma cidade conhecida por sua rica história, cultura, 
+                    arte e arquitetura icônica. Com seus charmosos cafés, ruas de paralelepípedos e avenidas arborizadas, Paris é famosa por 
+                    sua atmosfera romântica e sofisticada. 
+                    A cidade é lar de muitos marcos emblemáticos, como a Torre Eiffel, o Museu do Louvre, 
+                    a Catedral de Notre-Dame e o Arco do Triunfo. </p>
+                <a href="https://www.google.com/search?q=paris&sxsrf=APwXEdetYk9KLI-9lLIHgJkKcBGS9bDS0Q%3A1680659002677&ei=OtIsZOr6KNjY1sQPr_WKkAc&ved=0ahUKEwjq_97WzpH-AhVYrJUCHa-6AnIQ4dUDCA8&uact=5&oq=paris&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIECCMQJzIKCC4QsQMQigUQQzIICC4QsQMQgAQyCgguEIoFELEDEEMyCwguEK8BEMcBEIAEMgsILhCABBCxAxCDATIICAAQgAQQsQMyCwguEIoFELEDEIMBMggIABCABBCxAzoHCC4QigUQQzoNCC4QigUQsQMQgwEQQzoLCAAQgAQQsQMQgwE6BwgAEIoFEEM6CgguEIoFENQCEEM6EQguEIAEELEDEIMBEMcBENEDOgsILhCABBDHARCvAUoECEEYAFAAWP8EYJ4GaABwAXgAgAGQAYgBoAWSAQMwLjWYAQCgAQHAAQE&sclient=gws-wiz-serp">Saiba Mais</a>
+            </li>
+            <li>
+                <h3>Roma</h3>
+                <img src="img/depositphotos_9762132-stock-photo-roman-ruins-in-rome-forum.jpg" alt="Foto de Berlim">
+                <p>Roma é a capital da Itália e uma das cidades mais antigas e históricas do mundo. Conhecida como "A Cidade Eterna", Roma é famosa por sua rica herança cultural, 
+                    arquitetura impressionante e sua contribuição significativa para a história, arte e política ocidental. A cidade é lar de marcos emblemáticos como o Coliseu, 
+                    o Fórum Romano, a Fonte de Trevi e o Pantheon, 
+                    que são testemunhas de seu glorioso passado romano.</p>
+                <a href="https://www.google.com/search?q=roma&sxsrf=APwXEddH56uOLAvRHM9f5f_qug0y3pYlFg%3A1680659000053&ei=ONIsZP_wAqzX1sQPsc25yAY&ved=0ahUKEwj_7L7VzpH-AhWsq5UCHbFmDmkQ4dUDCA8&uact=5&oq=roma&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCC4Q1AIQigUQQzIHCAAQigUQQzIHCC4QigUQQzIICAAQgAQQsQMyCgguENQCEIoFEEMyCAgAEIAEELEDMgsIABCABBCxAxCDATIICC4QgAQQsQMyCAguEIAEELEDMgsILhCABBCxAxCDAToECCMQJzoLCC4QigUQsQMQgwE6EQguEIAEELEDEIMBEMcBENEDOg0ILhCKBRDHARDRAxBDOgUIABCABEoECEEYAFAAWLEDYLoEaABwAXgAgAGRAYgBmAOSAQMwLjOYAQCgAQHAAQE&sclient=gws-wiz-serp">Saiba Mais</a>
+            </li>
+        </ul>
+    </section>
+    <footer class="rodape">
+        <ul>
+            <li>Facebook</li>
+            <li>© Copyright 2023 todos os direitos reservados</li>
+            <li>Instagram</li>
+        </ul>
+         
+    </footer>
 </main>
-<footer class="rodape">
-    <ul>
-        <li>
-            <h2>teste</h2>
-        </li>
-    </ul>
-</footer>
 </html>
