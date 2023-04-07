@@ -25,7 +25,6 @@
         justify-content:space-between;
         width: 100%;
         padding: 10px 0;
-        position: fixed;
         background: blueviolet;
     }
     .navigation .logo{
@@ -48,6 +47,16 @@
         justify-content: center;
         align-items:center;
         padding: 4rem 0;
+    }
+    .home ul li{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .home ul li p{
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
     }
     .rodape{
         display: flex;
@@ -98,13 +107,17 @@
 <main>
     <section class="home">
         <section id="Descrição">
-            <h2>Seja bem vindo</h2>
-            <h2>Lugares para conhecer, lugares para sonhar!</h2>
-            <p> Viajar para a Europa pode ser uma experiência incrível e diversificada. O continente oferece uma 
-                rica história e cultura, paisagens deslumbrantes, deliciosa gastronomia e uma ampla gama de atividades 
-                turísticas. Entre os destinos mais populares estão cidades icônicas como Paris, Londres, Roma e Barcelona, 
-                além de países encantadores como a Itália, França, Espanha, Alemanha e Portugal.</p>
-          </section>
+            <ul>
+                <li>
+                    <h2>Seja bem vindo</h2>
+                    <h2>Lugares para conhecer, lugares para sonhar!</h2>
+                    <p> Viajar para a Europa pode ser uma experiência incrível e diversificada. O continente oferece uma 
+                    rica história e cultura, paisagens deslumbrantes, deliciosa gastronomia e uma ampla gama de atividades 
+                    turísticas. Entre os destinos mais populares estão cidades icônicas como Paris, Londres, Roma e Barcelona, 
+                    além de países encantadores como a Itália, França, Espanha, Alemanha e Portugal.</p>
+                </li>
+            </ul>   
+            </section>
     </section>
     
     <section id="pontos_turisticos">
